@@ -31,8 +31,8 @@ void funA(int g[], int length);
 void funB(int g[3][4], int length1, int length2);
 */
 
-int main()  
-{
+//int main()  
+//{
     //funAA();
     //funBB();
 
@@ -205,7 +205,7 @@ int main()
     */
 
 
-}
+//}
 
 /*
 void funA() {
