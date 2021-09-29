@@ -16,13 +16,20 @@ void funBB() {
 }
 */
 
-
+/*
 void funA();
 void funB(int a, int b);
 int funC();
 int funD(int a, int b);  // these are "formal parameters"; when num1 & num2 are used below, they are "actual parameters"
 void funE(int a, int b, int c = 1000);  // c is a default argument; place the value here only
 int funF(int &a, int b);  // pass by reference/value example
+*/
+
+void fun(int[] g, int[][] h);
+
+
+void funA(int g[], int length);
+void funB(int g[3][4], int length1, int length2);
 
 
 int main()
@@ -32,7 +39,7 @@ int main()
     funBB();
     */
 
-    
+    /*
     int num1 = 30;
     int num2 = 50;
     funA();
@@ -51,10 +58,15 @@ int main()
     int cc = funF(aa, bb);
     cout << "In main function, aa originally set to 5, now aa = " << aa << endl;
     cout << "In main function, bb originally set to 9, now bb = " << bb << endl;
+    */
+
+    
+    int g[] = { 1,2,3,4 };
+    funA(g, 4);
     
 }
 
-
+/*
 void funA() {
     cout << "funA results:\n";
     cout << "Hello world\n";
@@ -101,4 +113,31 @@ int funF(int &a, int b) {
     // pass by reference: value is only in one space in memory so if that space's value changes, anything that points to it will show that current value
     // pass by value: a value stored in one place in memory is copied to a second space in memory so if the value of the second space changes, it doesn't impact the value in the first space
 }
+*/
 
+// REWATCH AT 625 9/28, he was going too fast
+void fun(int[] g, int[][] h) {
+    int length = -1;
+    int length = sizeof(g) / sizeof(g[0]);
+    for (int i = 0; i < length; i++)
+    {
+        for (int j = 0; j < length; j++)
+        {
+            cout << g[i] << endl;
+        }
+    }
+}
+
+
+
+void funA(int g[], int length) {
+    for (int i = 0; i < length; i++)
+    {
+        cout << g[i] << endl;
+    }
+}
+
+
+void funB(int g[3][4], int length1, int length2) {
+
+}
