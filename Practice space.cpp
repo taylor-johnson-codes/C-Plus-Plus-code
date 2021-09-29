@@ -4,8 +4,8 @@
 #include <cstring>
 using namespace std;
 
-int main()  
-{
+//int main()  
+//{
     //cout << thePiExample << endl;
 
     //system("pause"); 
@@ -55,65 +55,7 @@ int main()
     //C = A ^ B;
     //cout << "C=" << C << endl;
 
-    /*for (int i = 0; i < 10; i++) {
-        cout << i << endl;
-    }*/
-
-    /*int i = 0;
-    while (i < 10) {
-        cout << i << endl;
-        i++;
-    }*/
-
-    /*int i = 0;
-    do {
-        cout << i << endl;
-        i++;
-    } while (i < 10);*/
-
-    /*cout << "num  " << "num+1  " << "num+2" << endl;
-    for (int i = 0; i < 10; i++){
-        cout << i << "     " << i + 1 << "     " << i + 2 << endl;
-
-    }*/
-
-    /*cout << "num  " << "num+1  " << "num+2" << endl;
-    int i = 0;
-    while (i < 10) {
-        cout << i << "     " << i + 1 << "     " << i + 2 << endl;
-        i++;
-    }*/
-
-    /*cout << "num  " << "num+1  " << "num+2" << endl;
-    int i = 0;
-    do
-    {
-        cout << i << "     " << i + 1 << "     " << i + 2 << endl;
-        i++;
-    } while (i < 10);*/
-
-    //cout << "num  " << "num+1  " << "num+2" << endl;
-    //for (int i = 0; i < 10; i++){
-    //    if (i == 4){
-    //        continue;  // skips the iteration for 4 completely
-    //        //break;  // breaks out of loop completely and moves on with program
-    //    }
-    //    cout << i << "     " << i + 1 << "     " << i + 2 << endl;
-    //}
-
-    //for (int i = 0; i < 5; i++)
-    //{
-    //    for (int j = 0; j < 2; j++)
-    //    {
-    //        cout << "i=" << i << "    " << "j=" << j << endl;
-    //        if (j==0)
-    //        {
-    //            //continue;
-    //            break;  // will break out of nested loop only; original loop will keep looping
-    //        }
-    //        cout << "hello" << endl;
-    //    }
-    //}
+    
 
     /*
     int grade[5];
@@ -147,4 +89,4 @@ int main()
     }
     */
 
-}
+//}

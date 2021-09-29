@@ -140,7 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="Loops.cpp" />
     <ClCompile Include="Practice space.cpp" />
+    <ClCompile Include="zNew File Code.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
