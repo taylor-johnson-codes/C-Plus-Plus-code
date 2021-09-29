@@ -57,36 +57,6 @@ using namespace std;
 
     
 
-    /*
-    int grade[5];
-    int length = sizeof(grade) / sizeof(grade[0]);
-    cout << "Number of elements in the array: " << length << endl;
-
-    cout << "Initializing the array:" << endl;
-    for (int i = 0; i < length; i++)
-    {
-        grade[i] = -1;
-        cout << grade[i] << endl;
-    }
-
-    cout << "Issue in C++:" << endl;
-    cout << grade[30] << endl; // doesn't tell us it doesn't exist
-    */
-
-    /*
-    int grade[] = { -1, -1, -1 };  // can leave [] empty if fully populating here
-    int length = sizeof(grade) / sizeof(grade[0]);
-    cout << "Number of elements in the array: " << length << endl;
-    */
-
-    /*
-    int grade[10] = { -1, -1, -1 };  // size of 10 with only 3 initialized
-    int length = sizeof(grade) / sizeof(grade[0]);
-    cout << "Number of elements in the array: " << length << endl;
-    for (int i = 0; i < length; i++)
-    {
-        cout << grade[i] << endl;  // will print 0s for uninitialized elements
-    }
-    */
+    
 
 //}

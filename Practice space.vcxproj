@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="Loops.cpp" />
     <ClCompile Include="Practice space.cpp" />
