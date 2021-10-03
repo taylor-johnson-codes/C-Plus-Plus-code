@@ -45,4 +45,6 @@
 //
 //    // 3-D:
 //    int grade6[4][2][2];  // declared and uninitialized example
+// 
+//	// MORE EXAMPLES OF ARRAYS IN FUNCTIONS FILE
 //}
