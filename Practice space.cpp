@@ -1,6 +1,6 @@
 //#include <iostream>
 //#include "Header.h"  // for thePiExample variable
-//#include <string>  // needed to use string data type
+//#include <string>  // needed for getline function
 //using namespace std;
 //
 //int main()  
