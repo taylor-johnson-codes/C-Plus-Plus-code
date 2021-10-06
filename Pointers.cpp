@@ -3,7 +3,6 @@ using namespace std;
 
 int main()
 {
-	
 	int a = 12;
 	// int *aPointer = &a;
 	int *aPointer;
@@ -27,7 +26,6 @@ int main()
 	cout << b << endl;
 	*/
 
-
 	* aPointer = 4;
 	cout << "Ran aPointer = 4;" << endl;
 	cout << "Value of a = " << a << endl;
@@ -36,7 +34,6 @@ int main()
 	cout << "Address of aPointer = " << &aPointer << endl;
 	cout << "Printing *aPointer prints the value stored in that address: " << *aPointer << endl;
 	cout << endl;
-
 
 	int* heapPtr = new int;  // nameless variable
 	*heapPtr = 7;
@@ -58,10 +55,11 @@ int main()
 	delete heapPtr;
 	delete[] heapPtrArray;  // leave brackets empty here
 
-
-	
-
-
-
-
+	int i = 56;
+	int &r = i;  // reference variable; needs to be initialized here
+	r = 4;
+	cout << &i << endl;
+	cout << &r << endl;
+	cout << i << endl;
+	cout << i << endl;
 }
