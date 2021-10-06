@@ -35,6 +35,33 @@ int main()
 	cout << "Value of aPointer = " << aPointer << endl;
 	cout << "Address of aPointer = " << &aPointer << endl;
 	cout << "Printing *aPointer prints the value stored in that address: " << *aPointer << endl;
+	cout << endl;
+
+
+	int* heapPtr = new int;  // nameless variable
+	*heapPtr = 7;
+	cout << heapPtr << "  " << &heapPtr << "  " << *heapPtr << endl;
+	cout << endl;
+
+	int* heapPtrArray = new int[4];  // nameless array; brackets need a number here
+	heapPtrArray[0] = -1;
+	heapPtrArray[1] = -4;
+	heapPtrArray[2] = 5;
+	heapPtrArray[3] = 7;
+	cout << heapPtrArray[2] << endl;
+	heapPtrArray[2] = -50;
+	cout << heapPtrArray[2] << endl;
+
+	heapPtrArray[0] = heapPtrArray[1] + heapPtrArray[2] * 2;
+	cout << heapPtrArray[0] << endl;
+
+	delete heapPtr;
+	delete[] heapPtrArray;  // leave brackets empty here
+
+
+	
+
+
 
 
 }
