@@ -43,8 +43,10 @@ int main()
 	cout << endl;
 
 
-	int* heapPtr = new int;  // nameless variable
-	*heapPtr = 7;
+	int* heapPtr = new int;  // nameless variable with a pointer
+	// "new" keyword allocates a memory address for an int and heapPtr points to that address
+	// heapPtr also gets its own memory address and the value there is the address for new int
+	*heapPtr = 7;  // inserting the value 7 into the empty int memory space
 	cout << heapPtr << "  " << &heapPtr << "  " << *heapPtr << endl;
 	cout << endl;
 
@@ -57,17 +59,20 @@ int main()
 	heapPtrArray[2] = -50;
 	cout << heapPtrArray[2] << endl;
 
-	heapPtrArray[0] = heapPtrArray[1] + heapPtrArray[2] * 2;
+	heapPtrArray[0] = heapPtrArray[1] + heapPtrArray[2];
 	cout << heapPtrArray[0] << endl;
+	cout << endl;
 
+	// Heap pointers need to be explicitly deleted when they're no longer needed,
+	// otherwise the memory space stays occupied unnecessarily 
 	delete heapPtr;
 	delete[] heapPtrArray;  // leave brackets empty here
 
+	// Pass by reference (2 vars share the same location in memory)
 	int i = 56;
 	int &r = i;  // reference variable; needs to be initialized here
 	r = 4;
 	cout << &i << endl;
 	cout << &r << endl;
-	cout << i << endl;
 	cout << i << endl;
 }
