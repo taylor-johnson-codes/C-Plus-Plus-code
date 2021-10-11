@@ -5,8 +5,14 @@ int main()
 {
 	int a = 12;
 	// int *aPointer = &a;
-	int *aPointer;
-	aPointer = &a;
+	int* aPointer;
+	aPointer = &a;  // no star when initializing later with a variable address
+
+	/* Three ways to declare pointer variables:
+	string* mystring; // Preferred
+	string *mystring;
+	string * mystring;
+	*/
 
 	cout << "Value of a = " << a << endl;
 	cout << "Address of a = " << &a << endl;
@@ -15,25 +21,27 @@ int main()
 	cout << "Printing *aPointer prints the value stored in that address: " << *aPointer << endl;
 	cout << endl;
 
-	/*
+
 	int b = 10;
 	int c = 5;
 
-	b = c + *aPointer;
+	b = c + *aPointer;  // b = 5 + 12
 	cout << b << endl;
 
-	b = c *(*aPointer);
+	b = c *(*aPointer);  // to use multiplication symbol, break apart with ()
 	cout << b << endl;
-	*/
+	cout << endl;
 
-	* aPointer = 4;
-	cout << "Ran aPointer = 4;" << endl;
+
+	*aPointer = 4;  // no star if reassigning to a variable address, if reassigning to a value a star is needed
+	cout << "Ran *aPointer = 4;" << endl;
 	cout << "Value of a = " << a << endl;
 	cout << "Address of a = " << &a << endl;
 	cout << "Value of aPointer = " << aPointer << endl;
 	cout << "Address of aPointer = " << &aPointer << endl;
 	cout << "Printing *aPointer prints the value stored in that address: " << *aPointer << endl;
 	cout << endl;
+
 
 	int* heapPtr = new int;  // nameless variable
 	*heapPtr = 7;
