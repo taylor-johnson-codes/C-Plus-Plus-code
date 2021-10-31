@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Problem 1:\n";
+    float height = 0.0f;
+    float weight = 0.0f;
+    float BMI = 0.0f;
+
+    cout << "Enter your height in inches:\n";
+    cin >> height;
+    cout << "You entered " << height << " for height.\n";
+    if (height <= 0)
+    {
+        cout << "You cannot enter zero or a negative number. Please restart the program.\n";
+        return 0;
+    }
+    cout << "\n";
+
+    cout << "Enter your weight in pounds:\n";
+    cin >> weight;
+    cout << "You entered " << weight << " for weight.\n";
+    if (weight <= 0)
+    {
+        cout << "You cannot enter zero or a negative number. Please restart the program.\n";
+        return 0;
+    }
+    cout << "\n";
+
+    BMI = (weight * 703) / (height * height);
+    cout << "Your BMI is " << BMI << endl;
+
+    if (BMI < 18.5)
+    {
+        cout << "Result: Underweight";
+    }
+    else if ((BMI >= 18.5) && (BMI < 25))
+    {
+        cout << "Result: Normal";
+    }
+    else if ((BMI >= 25) && (BMI < 30))
+    {
+        cout << "Result: Overweight";
+    }
+    else if (BMI >= 30)
+    {
+        cout << "Result: Obese";
+    }
+    else
+    {
+        cout << "An error has occurred.";
+    }
+
+    cout << endl;
+    system("pause"); 
+    cout << endl;
