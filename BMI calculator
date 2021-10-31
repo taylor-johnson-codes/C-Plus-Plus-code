@@ -51,7 +51,4 @@ int main()
     {
         cout << "An error has occurred.";
     }
-
-    cout << endl;
-    system("pause"); 
-    cout << endl;
+}
